@@ -33,6 +33,7 @@
                         colors: {
                             "sale-primary": "#E527B2",
                             "sale-secondary": "#111",
+                            "sale-background": "#F9F6E2;",
                             "sale-dil": "#11111150",
                         },
                     },
@@ -41,11 +42,30 @@
         </script>
     </head>
     <body>
-        <header>
-
+        <!-- Banner start -->
+        <header class="bg-sale-background">
+            <div class="hero min-h-screen max-w-6xl mx-auto">
+                <div
+                    class="hero-content flex-col-reverse gap-8 lg:flex-row-reverse"
+                >
+                    <img src="images/Summer 1.png" class="w-72" />
+                    <div
+                        class="text-center max-w-2xl text-sale-secondary space-y-11"
+                    >
+                        <h3 class="text-3xl font-medium">---SALE FEVER---</h3>
+                        <h1 class="text-6xl font-bold">
+                            Purchase TK 200 or above & get
+                            <span class="text-sale-primary">20% off</span>
+                        </h1>
+                        <div class="flex justify-center items-center gap-4">
+                            <p class="py-6 font-medium">Use Promo Code</p>
+                            <button class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold">SELL200</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
-        <main>
-            
-        </main>
+        <!-- Banner end -->
+        <main></main>
     </body>
 </html>
