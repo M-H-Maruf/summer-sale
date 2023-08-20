@@ -44,18 +44,18 @@ function addThisToCart(target) {
 }
 
 // apply coupon
-i = 1;
+ci = 1;
 function applyDiscount() {
     promoCode = getInputFieldValueById("promo");
-    if (promoCode == "SELL200" && i == 1) {
+    if (promoCode == "SELL200" && ci == 1) {
         discount = getTextElementValueById("discount");
         total = getTextElementValueById("total");
         discount = ((totalPrice * 20) / 100).toFixed(2);
         setTextElementValueById("discount", discount);
         total = (totalPrice - discount).toFixed(2);
         setTextElementValueById("total", total);
-        i--;
-    } else if (i != 1) {
+        ci--;
+    } else if (ci != 1) {
         alert("You have already used the promo code!");
     } else {
         alert("You have entered a wrong promo code!");

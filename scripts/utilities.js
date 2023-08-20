@@ -25,4 +25,5 @@ function resetValues() {
     couponButton.disabled = true;
     purchaseButton.disabled = true;
     document.getElementById("selected-items").innerHTML = "";
+    ci = 1;
 }
