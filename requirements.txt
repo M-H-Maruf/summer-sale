@@ -1,5 +1,5 @@
 #Main tasks--
---> Banner section
+--> Banner section //
 --> Card section (At least 2 rows/ six cards)
 --> Cart section ("Apply" & "Make Purchase" button initially disabled)
 --> Show things that are bought and their total price
