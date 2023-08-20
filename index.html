@@ -1,150 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="shortcut icon"
-            href="images/Summer 1.png"
-            type="image/x-icon"
-        />
-        <title>Summer Sale</title>
-        <!-- tailwind and daisyui cdn -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- external css -->
-        <link rel="stylesheet" href="styles/style.css" />
-        <!-- google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- custom tailwind classes -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            "sale-primary": "#E527B2",
-                            "sale-secondary": "#111",
-                            "sale-background": "#F9F6E2;",
-                            "sale-dil": "#11111150",
-                        },
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/Summer 1.png" type="image/x-icon" />
+    <title>Summer Sale</title>
+    <!-- tailwind and daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- external css -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- custom tailwind classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "sale-primary": "#E527B2",
+                        "sale-secondary": "#111",
+                        "sale-background": "#F9F6E2;",
+                        "sale-dil": "#11111150",
                     },
                 },
-            };
-        </script>
-    </head>
-    <body class="bg-[#F8F8F8]">
-        <!-- Banner start -->
-        <header class="bg-sale-background mb-32">
-            <div class="hero min-h-screen max-w-7xl mx-auto">
-                <div
-                    class="hero-content flex-col-reverse gap-8 lg:flex-row-reverse w-full justify-between"
-                >
-                    <img src="images/Summer 1.png" class="w-72" />
-                    <div
-                        class="text-center max-w-2xl text-sale-secondary space-y-11"
-                    >
-                        <h3 class="text-3xl font-medium">---SALE FEVER---</h3>
-                        <h1 class="text-6xl font-bold">
-                            Purchase TK 200 or above & get
-                            <span class="text-sale-primary">20% off</span>
-                        </h1>
-                        <div class="flex justify-center items-center gap-4">
-                            <p class="py-6 font-medium">Use Promo Code</p>
-                            <button
-                                class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold"
-                            >
-                                SELL200
-                            </button>
-                        </div>
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-[#F8F8F8]">
+    <!-- Banner start -->
+    <header class="bg-sale-background mb-32">
+        <div class="hero min-h-screen max-w-7xl mx-auto">
+            <div class="hero-content flex-col-reverse gap-8 lg:flex-row-reverse w-full justify-between">
+                <img src="images/Summer 1.png" class="w-72" />
+                <div class="text-center max-w-2xl text-sale-secondary space-y-11">
+                    <h3 class="text-3xl font-medium">---SALE FEVER---</h3>
+                    <h1 class="text-6xl font-bold">
+                        Purchase TK 200 or above & get
+                        <span class="text-sale-primary">20% off</span>
+                    </h1>
+                    <div class="flex justify-center items-center gap-4">
+                        <p class="py-6 font-medium">Use Promo Code</p>
+                        <button
+                            class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold">
+                            SELL200
+                        </button>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- Banner end -->
-        <!-- Sale start -->
-        <main
-            class="max-w-7xl mx-auto text-sale-secondary flex gap-7 flex-col lg:flex-row justify-center items-center lg:items-start mb-52"
-        >
-            <div class="product-section">
-                <!-- kitchenware start -->
-                <h3
-                    class="text-4xl font-semibold mb-8 text-center lg:text-left"
-                >
-                    Kitchenware
-                </h3>
-                <!-- Kitchenware cards -->
-                <div
-                    class="card-container flex flex-wrap justify-center lg:justify-start items-center gap-7"
-                >
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod1.png"
-                                alt="K. Accessories"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
-                            <div class="rating mb-3">
-                                <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked />
-                                <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
-                            </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                K. Accessories
-                            </h2>
-                            <p class="text-sale-dil text-xl">39.00 TK</p>
-                        </div>
-                    </div>
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod2.png"
-                                alt="K. Accessories"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
+        </div>
+    </header>
+    <!-- Banner end -->
+    <!-- Sale start -->
+    <main
+        class="max-w-7xl mx-auto text-sale-secondary flex gap-7 flex-col lg:flex-row justify-center items-center lg:items-start mb-52">
+        <div class="product-section">
+            <!-- kitchenware start -->
+            <h3 class="text-4xl font-semibold mb-8 text-center lg:text-left">
+                Kitchenware
+            </h3>
+            <!-- Kitchenware cards -->
+            <div class="card-container flex flex-wrap justify-center lg:justify-start items-center gap-7">
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod1.png" alt="K. Accessories" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
                         <div class="rating mb-3">
-                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400 hidden"  checked/>
-                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" checked />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-1" class="mask mask-star bg-orange-400" />
                         </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                K. Accessories
-                            </h2>
-                            <p class="text-sale-dil text-xl">25.00 TK</p>
-                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            K. Accessories
+                        </h2>
+                        <p class="text-sale-dil text-xl">39.00 TK</p>
                     </div>
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod3.png"
-                                alt="Home Cooker"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
+                </div>
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod2.png" alt="K. Accessories" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400 hidden" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star bg-orange-400" />
+                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            K. Accessories
+                        </h2>
+                        <p class="text-sale-dil text-xl">25.00 TK</p>
+                    </div>
+                </div>
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod3.png" alt="Home Cooker" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
                         <div class="rating mb-3">
                             <input type="radio" name="rating-3" class="mask mask-star bg-orange-400" />
                             <input type="radio" name="rating-3" class="mask mask-star bg-orange-400" />
@@ -152,167 +116,123 @@
                             <input type="radio" name="rating-3" class="mask mask-star bg-orange-400" checked />
                             <input type="radio" name="rating-3" class="mask mask-star bg-orange-400" />
                         </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                Home Cooker
-                            </h2>
-                            <p class="text-sale-dil text-xl">49.00 TK</p>
-                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            Home Cooker
+                        </h2>
+                        <p class="text-sale-dil text-xl">49.00 TK</p>
                     </div>
                 </div>
-                <!-- Kitchenware end -->
-                <!-- Sportswear start -->
-                <h3
-                    class="text-4xl font-semibold mb-8 text-center lg:text-left mt-20"
-                >
+            </div>
+            <!-- Kitchenware end -->
+            <!-- Sportswear start -->
+            <h3 class="text-4xl font-semibold mb-8 text-center lg:text-left mt-20">
                 Sportswear
-                </h3>
-                <!-- Sportswear cards -->
-                <div
-                    class="card-container flex flex-wrap justify-center lg:justify-start items-center gap-7"
-                >
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod4.png"
-                                alt="Sports Back Cap"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
-                            <div class="rating mb-3">
-                                <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" checked />
-                                <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
-                            </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                Sports Back Cap
-                            </h2>
-                            <p class="text-sale-dil text-xl">49.00 TK</p>
-                        </div>
-                    </div>
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod5.png"
-                                alt="Full Jersey Set"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
+            </h3>
+            <!-- Sportswear cards -->
+            <div class="card-container flex flex-wrap justify-center lg:justify-start items-center gap-7">
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod4.png" alt="Sports Back Cap" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
                         <div class="rating mb-3">
-                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" checked/>
-                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" checked />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-4" class="mask mask-star bg-orange-400" />
                         </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                K. Accessories
-                            </h2>
-                            <p class="text-sale-dil text-xl">69.00 TK</p>
-                        </div>
-                    </div>
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod6.png"
-                                alt="Sports cates"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
-                        <div class="rating mb-3">
-                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" checked/>
-                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
-                        </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                Sports cates
-                            </h2>
-                            <p class="text-sale-dil text-xl">159.00 TK</p>
-                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            Sports Back Cap
+                        </h2>
+                        <p class="text-sale-dil text-xl">49.00 TK</p>
                     </div>
                 </div>
-                <!-- Sportswear end -->
-                <!-- Furniture start -->
-                <h3
-                    class="text-4xl font-semibold mb-8 text-center lg:text-left mt-20"
-                >
-                Furniture
-                </h3>
-                <!-- Furniture cards -->
-                <div
-                    class="card-container flex flex-wrap justify-center lg:justify-start items-center gap-7"
-                >
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod7.png"
-                                alt="Single Relax Chair"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
-                            <div class="rating mb-3">
-                                <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
-                                <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" checked/>
-                                <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
-                            </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                Single Relax Chair
-                            </h2>
-                            <p class="text-sale-dil text-xl">185.00 TK</p>
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod5.png" alt="Full Jersey Set" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" checked />
+                            <input type="radio" name="rating-5" class="mask mask-star bg-orange-400" />
                         </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            K. Accessories
+                        </h2>
+                        <p class="text-sale-dil text-xl">69.00 TK</p>
                     </div>
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod8.png"
-                                alt="Children play"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
+                </div>
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod6.png" alt="Sports cates" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" checked />
+                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-6" class="mask mask-star bg-orange-400" />
+                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            Sports cates
+                        </h2>
+                        <p class="text-sale-dil text-xl">159.00 TK</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sportswear end -->
+            <!-- Furniture start -->
+            <h3 class="text-4xl font-semibold mb-8 text-center lg:text-left mt-20">
+                Furniture
+            </h3>
+            <!-- Furniture cards -->
+            <div class="card-container flex flex-wrap justify-center lg:justify-start items-center gap-7">
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod7.png" alt="Single Relax Chair" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
+                        <div class="rating mb-3">
+                            <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
+                            <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" checked />
+                            <input type="radio" name="rating-7" class="mask mask-star bg-orange-400" />
+                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            Single Relax Chair
+                        </h2>
+                        <p class="text-sale-dil text-xl">185.00 TK</p>
+                    </div>
+                </div>
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod8.png" alt="Children play" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
                         <div class="rating mb-3">
                             <input type="radio" name="rating-8" class="mask mask-star bg-orange-400" />
                             <input type="radio" name="rating-8" class="mask mask-star bg-orange-400" />
                             <input type="radio" name="rating-8" class="mask mask-star bg-orange-400" />
                             <input type="radio" name="rating-8" class="mask mask-star bg-orange-400" />
-                            <input type="radio" name="rating-8" class="mask mask-star bg-orange-400" checked/>
+                            <input type="radio" name="rating-8" class="mask mask-star bg-orange-400" checked />
                         </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                Children play
-                            </h2>
-                            <p class="text-sale-dil text-xl">299.00 TK</p>
-                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            Children play
+                        </h2>
+                        <p class="text-sale-dil text-xl">299.00 TK</p>
                     </div>
-                    <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
-                        <figure class="p-10 bg-sale-dil">
-                            <img
-                                src="images/prod9.png"
-                                alt="Flexible Sofa"
-                                class="rounded-lg"
-                            />
-                        </figure>
-                        <div
-                            class="card-body items-center text-center space-y-2 pb-0"
-                        >
+                </div>
+                <div class="card w-72 shadow-xl p-6 rounded-lg h-96">
+                    <figure class="p-10 bg-sale-dil">
+                        <img src="images/prod9.png" alt="Flexible Sofa" class="rounded-lg" />
+                    </figure>
+                    <div class="card-body items-center text-center space-y-2 pb-0">
                         <div class="rating mb-3">
                             <input type="radio" name="rating-9" class="mask mask-star bg-orange-400" />
                             <input type="radio" name="rating-9" class="mask mask-star bg-orange-400" />
@@ -320,80 +240,77 @@
                             <input type="radio" name="rating-9" class="mask mask-star bg-orange-400" checked />
                             <input type="radio" name="rating-9" class="mask mask-star bg-orange-400" />
                         </div>
-                            <h2 class="card-title text-xl font-semibold">
-                                Flexible Sofa
-                            </h2>
-                            <p class="text-sale-dil text-xl">339.00 TK</p>
-                        </div>
+                        <h2 class="card-title text-xl font-semibold">
+                            Flexible Sofa
+                        </h2>
+                        <p class="text-sale-dil text-xl">339.00 TK</p>
                     </div>
                 </div>
-                <!-- Furniture end -->
-
             </div>
-            <!-- Cart start -->
-            <div class="cart-section text-center lg:text-left mt-16 w-72">
-                <div class="card shadow-2xl mt-2">
-                    <div class="card-body">
-                        <h3 class="text-sale-secondary text-2xl font-medium">
-                            Have coupon?
-                        </h3>
+            <!-- Furniture end -->
 
-                        <div class="justify-center flex w-60">
-                            <input
-                                type="text"
-                                placeholder="Type here"
-                                class="input input-bordered w-44 rounded-r-none"
-                            />
-                            <button
-                                class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold rounded-l-none border-0 hover:border-2"
-                            >
-                                Apply
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mt-6 shadow-xl">
-                    <div class="card-body">
-                        <h3
-                            class="text-sale-secondary text-2xl font-medium leading-10"
-                        >
-                            Have coupon?
-                        </h3>
-                        <h3
-                            class="text-sale-secondary text-2xl font-medium leading-10"
-                        >
-                            Have coupon?
-                        </h3>
-                        <h3
-                            class="text-sale-secondary text-2xl font-medium leading-10"
-                        >
-                            Have coupon?
-                        </h3>
-                        <hr class="my-5" />
-                        <h3 class="text-sale-secondary text-2xl font-medium">
-                            Total price: <span></span>TK
-                        </h3>
-                        <h3
-                            class="text-sale-secondary text-2xl font-medium leading-10"
-                        >
-                            Discount : <span></span>TK
-                        </h3>
-                        <h3
-                            class="text-sale-secondary text-2xl font-medium leading-10"
-                        >
-                            Total: <span></span>TK
-                        </h3>
-                        <hr class="my-5" />
+        </div>
+        <!-- Cart start -->
+        <div class="cart-section text-center lg:text-left mt-16 w-72">
+            <div class="card shadow-2xl mt-2">
+                <div class="card-body">
+                    <h3 class="text-sale-secondary text-2xl font-medium">
+                        Have coupon?
+                    </h3>
+
+                    <div class="justify-center flex w-60">
+                        <input type="text" placeholder="Type here" class="input input-bordered w-44 rounded-r-none" />
                         <button
-                            class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold w-full"
-                        >
-                            Make Purchase
+                            class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold rounded-l-none border-0 hover:border-2">
+                            Apply
                         </button>
                     </div>
                 </div>
             </div>
-            <!-- Cart end -->
-        </main>
-        <!-- Sale end -->
-    </body>
+            <div class="card mt-6 shadow-xl">
+                <div class="card-body">
+                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                        Have coupon?
+                    </h3>
+                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                        Have coupon?
+                    </h3>
+                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                        Have coupon?
+                    </h3>
+                    <hr class="my-5" />
+                    <h3 class="text-sale-secondary text-2xl font-medium">
+                        Total price: <span></span>TK
+                    </h3>
+                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                        Discount : <span></span>TK
+                    </h3>
+                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                        Total: <span></span>TK
+                    </h3>
+                    <hr class="my-5" />
+                    <button
+                        class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold w-full"
+                        onclick="my_modal_1.showModal()">Make Purchase</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <form method="dialog" class="modal-box flex flex-col justify-center items-center px-0">
+                            <img src="images/congo.png" alt="OK sign">
+                            <h3 class="font-bold text-4xl">Congratulations</h3>
+                            <p class="py-4 text-xl text-sale-dil">Your Purchase Was Successful!</p>
+                            <div class="modal-action justify-center">
+                                <button
+                                    class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold">Go
+                                    Home</button>
+                            </div>
+                        </form>
+                    </dialog>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Cart end -->
+    </main>
+    <!-- Sale end -->
+</body>
+
 </html>
