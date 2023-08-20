@@ -1,0 +1,13 @@
+#Main tasks--
+--> Banner section
+--> Card section (At least 2 rows/ six cards)
+--> Cart section ("Apply" & "Make Purchase" button initially disabled)
+--> Show things that are bought and their total price
+--> "Make Purchase" enabled after the total price is greater than 0
+--> "Apply" button enabled after the total price is greater than 200
+--> Show discount and total after deducting the discount from total price
+
+#Bonus tasks--
+--> Congratulation modal
+--> "Go Home" button that resets everything
+--> Responsive
