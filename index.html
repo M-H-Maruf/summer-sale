@@ -71,12 +71,20 @@
         </header>
         <!-- Banner end -->
         <!-- Sale start -->
-        <main class="max-w-6xl mx-auto text-sale-secondary flex gap-7">
+        <main
+            class="max-w-6xl mx-auto text-sale-secondary flex gap-7 flex-col lg:flex-row justify-center items-center lg:items-start"
+        >
             <div class="product-section">
-                <h3 class="text-4xl font-semibold mb-8">Kitchenware</h3>
+                <h3
+                    class="text-4xl font-semibold mb-8 text-center lg:text-left"
+                >
+                    Kitchenware
+                </h3>
                 <!-- Kitchenware cards -->
-                <div class="card-container flex">
-                    <div class="card w-80 shadow-2xl p-6 rounded-lg">
+                <div
+                    class="card-container flex flex-wrap justify-center lg:justify-start items-center gap-7"
+                >
+                    <div class="card w-80 shadow-xl p-6 rounded-lg h-96">
                         <figure class="p-10 bg-sale-dil">
                             <img
                                 src="images/prod1.png"
@@ -121,7 +129,7 @@
                             <p class="text-sale-dil text-xl">39.00 TK</p>
                         </div>
                     </div>
-                    <div class="card w-80 shadow-2xl p-6 rounded-lg">
+                    <div class="card w-80 shadow-xl p-6 rounded-lg h-96">
                         <figure class="p-10 bg-sale-dil">
                             <img
                                 src="images/prod2.png"
@@ -165,7 +173,7 @@
                             <p class="text-sale-dil text-xl">25.00 TK</p>
                         </div>
                     </div>
-                    <div class="card w-80 shadow-2xl p-6 rounded-lg">
+                    <div class="card w-80 shadow-xl p-6 rounded-lg h-96">
                         <figure class="p-10 bg-sale-dil">
                             <img
                                 src="images/prod3.png"
@@ -216,18 +224,51 @@
             <div class="cart-section mt-16">
                 <div class="card shadow-2xl mt-2">
                     <div class="card-body">
-                        <h3 class="text-sale-secondary">Have coupon?</h3>
+                        <h3 class="text-sale-secondary text-2xl font-medium">
+                            Have coupon?
+                        </h3>
 
-                        <div class="card-actions justify-center">
+                        <div class="justify-center flex">
                             <input
                                 type="text"
                                 placeholder="Type here"
-                                class="input input-bordered w-full max-w-xs"
+                                class="input input-bordered max-w-xs rounded-r-none"
                             />
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button
+                                class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold rounded-l-none border-0 hover:border-2"
+                            >
+                                Apply
+                            </button>
                         </div>
                     </div>
                 </div>
+                <div class="card mt-6 shadow-xl">
+                    <div class="card-body">
+                        <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                            Have coupon?
+                        </h3>
+                        <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                            Have coupon?
+                        </h3>
+                        <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                            Have coupon?
+                        </h3>
+                      <hr>
+                      <h3 class="text-sale-secondary text-2xl font-medium">
+                        Total price: <span></span>TK
+                    </h3>
+                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                        Discount : <span></span>TK
+                    </h3>
+                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                        Total: <span></span>TK
+                    </h3>
+                    <hr>
+                    <button class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold w-full">
+                        Make Purchase
+                    </button>
+                    </div>
+                  </div>
             </div>
             <!-- Cart end -->
         </main>
