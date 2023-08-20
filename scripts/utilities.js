@@ -1,7 +1,7 @@
 function getInputFieldValueById(inputFieldId) {
     const inputField = document.getElementById(inputFieldId);
     const inputFieldValueString = inputField.value;
-    const inputFieldValue = parseFloat(inputFieldValueString);
+    const inputFieldValue = inputFieldValueString;
     inputField.value = "";
     return inputFieldValue;
 }
@@ -18,4 +18,11 @@ function setTextElementValueById(elementId, newValue) {
     textElement.innerText = newValue;
 }
 
-
+function resetValues() {
+    setTextElementValueById("total-price", "0.00");
+    setTextElementValueById("total", "0.00");
+    setTextElementValueById("discount", "0.00");
+    couponButton.disabled = true;
+    purchaseButton.disabled = true;
+    document.getElementById("selected-items").innerHTML = "";
+}

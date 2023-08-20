@@ -47,7 +47,8 @@
                     </h1>
                     <div class="flex justify-center items-center gap-4">
                         <p class="py-6 font-medium">Use Promo Code</p>
-                        <button
+                        <p id="p1" class="hidden">SELL200</p>
+                        <button id="promo-code" onclick="copyContent()"
                             class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold">
                             SELL200
                         </button>
@@ -259,8 +260,9 @@
                     </h3>
 
                     <div class="justify-center flex w-60">
-                        <input type="text" placeholder="Type here" class="input input-bordered w-44 rounded-r-none" />
-                        <button id="coupon"
+                        <input id="promo" type="text" placeholder="Type here"
+                            class="input input-bordered w-44 rounded-r-none" />
+                        <button id="coupon" onclick="applyDiscount()"
                             class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold rounded-l-none border-0 hover:border-2">
                             Apply
                         </button>
@@ -274,13 +276,13 @@
                     </ol>
 
                     <hr class="my-5" />
-                    <h3 class="text-sale-secondary text-2xl font-medium">
+                    <h3 class="text-sale-secondary text-xl font-medium">
                         Total price: <span id="total-price">0.00</span>TK
                     </h3>
-                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                    <h3 class="text-sale-secondary text-xl font-medium leading-10">
                         Discount : <span id="discount">0.00</span>TK
                     </h3>
-                    <h3 class="text-sale-secondary text-2xl font-medium leading-10">
+                    <h3 class="text-sale-secondary text-xl font-medium leading-10">
                         Total: <span id="total">0.00</span>TK
                     </h3>
                     <hr class="my-5" />
@@ -293,7 +295,7 @@
                             <h3 class="font-bold text-4xl">Congratulations</h3>
                             <p class="py-4 text-xl text-sale-dil">Your Purchase Was Successful!</p>
                             <div class="modal-action justify-center">
-                                <button
+                                <button onclick="resetValues()"
                                     class="btn bg-sale-primary text-white hover:text-sale-primary hover:bg-sale-background hover:border-sale-primary font-semibold">Go
                                     Home</button>
                             </div>
